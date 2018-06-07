@@ -1,25 +1,25 @@
 -- This file was automatically generated for the LuaDist project.
 
 package = "alnbox"
-version = "1.0.0-1"
+version = "1.1.0-1"
 -- LuaDist source
 source = {
-  tag = "1.0.0-1",
+  tag = "1.1.0-1",
   url = "git://github.com/LuaDist-testing/alnbox.git"
 }
 -- Original source
 -- source = {
---     url = "git://github.com/starius/alnbox.git",
---     tag = "1.0.0",
+--     url = "git://github.com/npge/alnbox.git",
+--     tag = "1.1.0",
 -- }
 description = {
     summary = "Alignment viewer based on the curses library",
-    homepage = "https://github.com/starius/alnbox",
+    homepage = "https://github.com/npge/alnbox",
     license = "MIT",
 }
 dependencies = {
     "lua >= 5.1",
-    "luaposix",
+    "lcurses",
 }
 build = {
     type = "builtin",
@@ -42,7 +42,7 @@ build = {
     },
     install = {
         bin = {
-            "src/bin/show-fasta.lua"
+            "src/bin/show-fasta"
         }
     }
 }

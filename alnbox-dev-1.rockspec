@@ -1,16 +1,16 @@
 package = "alnbox"
 version = "dev-1"
 source = {
-    url = "git://github.com/starius/alnbox.git"
+    url = "git://github.com/npge/alnbox.git"
 }
 description = {
     summary = "Alignment viewer based on the curses library",
-    homepage = "https://github.com/starius/alnbox",
+    homepage = "https://github.com/npge/alnbox",
     license = "MIT",
 }
 dependencies = {
     "lua >= 5.1",
-    "luaposix",
+    "lcurses",
 }
 build = {
     type = "builtin",
@@ -33,7 +33,7 @@ build = {
     },
     install = {
         bin = {
-            "src/bin/show-fasta.lua"
+            "src/bin/show-fasta"
         }
     }
 }
